@@ -13,7 +13,8 @@ class MainActivity : AppCompatActivity() {
 
         with(binding) {
             btnTest1.setOnClickListener{
-                Toast.makeText(this@MainActivity, "bisa ga nih", Toast.LENGTH_LONG).show()
+                val nameInput = binding.nameText.text.toString()
+                Toast.makeText(this@MainActivity, "Haloooo $nameInput", Toast.LENGTH_LONG).show()
             }
             btnTest2.setOnClickListener{
                 Toast.makeText(this@MainActivity, "wuih bisa nih", Toast.LENGTH_LONG).show()
