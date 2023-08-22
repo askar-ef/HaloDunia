@@ -7,6 +7,10 @@ android {
     namespace = "com.example.halodunia"
     compileSdk = 33
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.halodunia"
         minSdk = 24
