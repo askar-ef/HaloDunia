@@ -5,8 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:layout_gravity="center_vertical"
+    android:padding="30dp"
+    android:gravity="center_vertical"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Hi App"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="48dp"
+            android:fontFamily="sans-serif-black">
+        </TextView>
+    </LinearLayout>
 
     <!--  name  -->
     <LinearLayout
@@ -20,7 +37,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/nameText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:paddingVertical="15dp"/>
     </LinearLayout>
 
 <!--  phone  -->
@@ -35,8 +53,10 @@
             android:layout_height="wrap_content"
             android:text="Phone:"/>
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneText"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:paddingVertical="15dp"/>
     </LinearLayout>
 
     <!--  Town  -->
@@ -46,25 +66,27 @@
         android:orientation="horizontal"
         android:weightSum="100"
         >
-
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Town:"/>
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/townText"
             android:layout_weight="50"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:paddingVertical="15dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Code:"/>
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/codeText"
             android:layout_weight="50"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:paddingVertical="15dp"/>
 
     </LinearLayout>
 
@@ -72,7 +94,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
 
 
     <Button
@@ -92,12 +115,6 @@
         android:layout_marginHorizontal="4dp"/>
 
     </LinearLayout>
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CheckBox" />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

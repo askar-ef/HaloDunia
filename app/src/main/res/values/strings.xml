@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">HaloDunia</string>
-    <string name="btn_test">Testing dulu bro</string>
-    <string name="btn_test_hai">Testing haloo</string>
+    <string name="btn_test">Say Hi</string>
+    <string name="btn_test_hai">Say Bye</string>
 </resources>
